@@ -1,0 +1,360 @@
+html, body, #intro {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    z-index: -1;
+    background-color: #262626;
+}
+h1 {
+    font-family: 'p22-allyson-pro', sans-serif;
+    font-size: 105px;
+}
+h2 {
+    font-family: 'sofia-pro', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #d1a16c;
+}
+
+p {
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+/* loader page */
+
+.loader-bg {
+    position: fixed;
+    z-index: 99999;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+  }
+  .loader {
+    border: 0 solid transparent;
+    width: 250px;
+    height: 250px;
+  
+  }
+  
+  .loader::before, .loader::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+  }
+  .loader::before {
+    animation-delay: .5s;
+  }
+  @keyframes loader {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  /* this is for javascript */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  .fade-in.appear {
+    opacity: 1;
+  }
+
+/* this is for the navbar */
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 60px;
+}
+
+
+.menu-item {
+    font-family: 'Sofia-Pro', sans-serif;
+    font-size: 25px;
+    color: #d1a16c;
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+.menu-item:hover {
+    color: #f2f2f2;
+    transition: all ease 0.5s
+}  
+
+/* hero image */
+#intro {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("../images/25.jpg") no-repeat left center fixed;
+    display: flex;
+}
+
+.hero-text {
+    color: #f2f2f2;
+    align-items: center;
+    margin-left: 100px;
+}
+.hero-button {
+    margin-left: 100px;
+    color: #000000;
+    background-color: #d1a16c;
+    border-color: #d1a16c;
+    border-radius: 8px;
+    font-family: 'sofia-pro', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 28px;
+    text-align: center;
+}
+.hero-button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    outline: none;
+    transform: translateY(-7px);
+}
+h1.hero-text {
+  font-size: 90px;
+}
+
+/* about section */
+
+.about {
+    width: 100vw;
+    height: 105vh;
+     margin-top: 10px;
+    background-color: #262626;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+}
+
+.about-section {
+  padding: 10px;
+}
+
+/*skills section */
+.skills-section {
+  55vh
+}
+.skills-header {
+    justify-content: center;
+    background-color: #262626;
+    color: #d1a16c;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.skills-section h4 {
+    color: #f2f2f2;
+    font-weight: 300;
+}
+
+.skills-section p {
+    color: #f2f2f2;
+    font-weight: 100;
+    padding: 10px;
+}
+
+
+/* Projects section */
+ .projects-title {
+    padding-top: 10px;
+     font-family: 'sofia-pro', sans-serif;
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 50px;
+     background-color: #1d1d1d;
+     color: #f2f2f2;
+     text-align: center;
+ }
+
+ .projects-section {
+     height: 110vh;
+     background-color: #1d1d1d;
+     cursor: pointer;
+ }
+
+ .project {
+     height: 33vh;
+ }
+
+ .project h2 {
+     color: #d1a16c;
+     font-size: 32px;
+ }
+
+ .project p {
+     color: #f2f2f2;
+ }
+ 
+ /* contact section */
+
+ .contact-title {
+     font-family: 'sofia-pro', sans-serif;
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 50px;
+     background-color: #191919;
+     color: #f2f2f2;
+     text-align: center;
+ }
+
+ .contact-section {
+     height: 300px;
+     background-color: #191919;
+     align-items: center;
+     padding: 10px;
+ }
+
+ .contact-card{
+    background-color: #000000;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #D1A16c;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .contact-card-icon{
+    font-size: 28px;
+    background: #D1A16c;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    color: #000;
+  }
+
+  .contact-card:hover .card-icon{
+    background: none;
+    color: #D1A16c;
+    transform: scale(1.6);
+  }
+  
+  .contact-card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .contact-card:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+
+  /* footer section */
+  .footer {
+    margin-top: 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    color: #d1a16c;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+  /* go to top button */
+  .go-top {
+    float: right;
+    width: 60px;
+    height: 60px;
+    color: #d1a16c;
+    position: relative;
+    z-index: 10;
+  }
+  .go-top:hover {
+    color: #000000;
+  }
+
+
+  @media screen and (max-width:600px) {
+    .logo {
+      margin: 0px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 22px;
+    }
+    #intro {
+      background-position: center;
+      display: flex;
+      
+      text-align: center;
+    }
+    .hero-text {
+      text-align: center;
+      margin: 3px;
+    }
+    h1.hero-text {
+      font-size: 65px;
+    }
+    .hero-button {
+      justify-content: center;
+    }
+    
+    .projects-section {
+      text-align: center;
+    }
+    .about {
+      height: 250vh;
+    }
+    .contact-title {
+      font-size: 35px;
+    }
+    .contact-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-card {
+      width: calc(100vw - 15px);
+      justify-content: center;
+      height: 30vh;
+      background-color: transparent;
+    }
+    .contact-card p {
+      opacity: 1;
+    }
+  }
