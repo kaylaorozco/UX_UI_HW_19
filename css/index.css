@@ -157,7 +157,7 @@ h1.hero-text {
 
 /*skills section */
 .skills-section {
-  55vh
+  height: 55vh;
 }
 .skills-header {
     justify-content: center;
@@ -201,6 +201,14 @@ h1.hero-text {
  .project {
      height: 33vh;
  }
+ .project a {
+   color: #d1a16c;
+   text-decoration: none;
+ }
+ .project a:visited {
+  color: #d1a16c;
+  text-decoration: none;
+ } 
 
  .project h2 {
      color: #d1a16c;
