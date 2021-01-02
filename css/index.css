@@ -202,16 +202,16 @@ h1.hero-text {
      height: 33vh;
  }
  .project a {
-   color: #d1a16c;
+   color: #d1a16c !important;
    text-decoration: none;
  }
  .project a:visited {
-  color: #d1a16c;
+  color: #d1a16c !important;
   text-decoration: none;
  } 
 
  .project h2 {
-     color: #d1a16c;
+     color: #d1a16c !important;
      font-size: 32px;
  }
 
